@@ -1,12 +1,13 @@
 run();
 
+// Deze functie start de applicatie en zorgt ervoor dat alle functies worden aangeroepen
+// om de pagina op te bouwen
 function run() {
-    console.log("run started");
     createPictureHolders();
     addPictures();
 }
 
-//Maak div-elementen waarin de afbeeldingen en hartjes kunnen worden weergegeven
+// Maak div-elementen waarin de afbeeldingen en hartjes kunnen worden weergegeven
 function createPictureHolders() {
     var pics = document.getElementById("pics");
     for(var i = 1; i <= 9; i++) {
@@ -23,7 +24,7 @@ function createPictureHolders() {
     return pics;
 }
 
-//Voeg de afbeeldingen toe aan de div-elementen
+// Voeg de afbeeldingen toe aan de div-elementen
 function addPictures(pics) {
     aapPictures = document.getElementsByClassName("aappicture");
     for(var i = 0; i < aapPictures.length; i++) {
@@ -34,7 +35,7 @@ function addPictures(pics) {
 }
 
 
-//Maak een afbeeldingen en zorg er voor dat er een hartje wordt getoond
+// Maak een afbeeldingen en zorg er voor dat er een hartje wordt getoond
 // als er op een afbeelding wordt geklikt
 function createImage(i) {
     var picture = document.createElement("img");
@@ -45,7 +46,7 @@ function createImage(i) {
     return picture;
 }
 
-//Voeg het hartje toe als er op een afbeelding wordt geklikt.
+// Voeg het hartje toe als er op een afbeelding wordt geklikt.
 function addHeart(i) {
     notYourFavoriteMonkies = document.getElementsByClassName("aapfavorite");
     for(var x = 0; x <  notYourFavoriteMonkies.length; x++) {
