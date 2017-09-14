@@ -1,0 +1,29 @@
+div {
+    height:300px;
+    width:300px;
+    background-color: greenyellow;
+    float:left;
+}
+
+div#bke {
+    position: absolute;
+    z-index:5;
+    height:900px;
+    width:900px;
+}
+
+div#gameover {
+    position: absolute;
+    display: none;
+    padding-top:300px;
+    z-index:8;
+    width:900px;
+    height:600px;
+    font-family: Arial, sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    background-color: transparent;
+    color:red;
+    opacity: 0.85;
+}
